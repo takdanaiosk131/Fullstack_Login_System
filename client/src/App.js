@@ -48,7 +48,6 @@ class App extends Component {
               <PrivateRoute path='/profile' exact component={Profile} onLogOut={this.logout} email={this.state.email} isAuth={this.state.isAuth} />
               {/* <Route path='/signin' exact component={Signin} /> */}
               <Route path='/signin' exact render={() => <Signin onLoginSubmit={this.loginSubmit} isAuth={this.state.isAuth} />}  />
-              
               <Route path='/signup' exact component={Signup} />
           </Switch>
         </div>
